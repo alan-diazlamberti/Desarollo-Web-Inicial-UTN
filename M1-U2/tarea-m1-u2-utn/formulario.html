@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre y apellido:</label>
+        <input type="text">
+
+        <p>
+            <label for="correo_electronico">Correo electronico:</label>
+            <input type="email">
+        </p>
+    
+        <p>
+            <label for="dni">DNI:</label>
+            <input type="number" placeholder="Ingresar sin puntos">
+        </p>
+
+        <p>
+            <label for="cuit">CUIT</label>
+            <input type="password">
+        </p>
+
+        <p>
+            <label for="carga_horaria">Carga horaria:</label>
+            <select name="" id="">
+                <option value="">Full time</option>
+                <option value="">Part time</option>
+            </select>
+        </p>
+
+            <label for="zona">Zona:</label>
+            <ul>
+                <li>
+                    <input type="radio" name="tipo_de_empresa">
+                    <label for="caba">CABA</label>
+                </li>
+                <li>
+                    <input type="radio" name="tipo_de_empresa">
+                    <label for="zona_oeste">Zona Oeste</label>
+                <li>
+                    <input type="radio" name="tipo_de_empresa">
+                    <label for="zona_sur">Zona Sur</label>
+                </li>
+                <li>
+                    <input type="radio" name="tipo_de_empresa">
+                    <label for="zona_norte">Zona Norte</label>
+                </li>
+            </ul>
+
+        <label for="disponibilidad">Disponibilidad:</label>
+        <input type="checkbox">
+        <label for="full_time">Full-time</label>
+        
+        <input type="checkbox">
+        <label for="part_time">Part-time</label>
+
+        <p>
+            <label for="mensaje">Mensaje:</label>
+        </p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date">
+        </p>
+
+        <p>
+            <label for="archivo_adjunto">Archivo adjunto:</label>
+            <input type="file">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
