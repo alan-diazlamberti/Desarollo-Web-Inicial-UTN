@@ -71,7 +71,7 @@ div{
 footer{
     background-color: rgb(255, 222, 209);
     padding-left: 65px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 60px;
 }
