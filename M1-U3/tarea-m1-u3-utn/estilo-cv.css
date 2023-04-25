@@ -38,6 +38,10 @@ a:hover{
 
 /*Aca comienzan los estilos de las etiquetas semanticas*/
 
+body{
+    margin: 0;
+}
+
 header, div, footer{
     display: flex;
 }
