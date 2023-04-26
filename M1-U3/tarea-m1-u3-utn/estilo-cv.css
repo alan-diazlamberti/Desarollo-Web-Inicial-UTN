@@ -50,14 +50,11 @@ header{
     background-color: rgb(100,100,100);
 }
 
-div{
-    height: 600px;
-}
-
 .bloque-izquierdo, .bloque-derecho{
     padding-left: 75px;
     padding-right: 25%;
-    padding-top: 75px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .bloque-izquierdo{
@@ -71,7 +68,7 @@ div{
 footer{
     background-color: rgb(255, 222, 209);
     padding-left: 65px;
-    display: flex;
+    padding-bottom: 6px;
     justify-content: flex-start;
     align-items: center;
 }
