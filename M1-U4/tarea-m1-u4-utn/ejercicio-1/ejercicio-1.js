@@ -31,4 +31,4 @@ else if(x >100000){
 }
 
 console.log("El medio apropiado para recorrer", x, "metros es:", y)
-document.write("El medio apropiado para recorrer" + " " + x + " " + "metros es:" + " " + y)
+alert("El medio apropiado para recorrer" + " " + x + " " + "metros es:" + " " + y)
