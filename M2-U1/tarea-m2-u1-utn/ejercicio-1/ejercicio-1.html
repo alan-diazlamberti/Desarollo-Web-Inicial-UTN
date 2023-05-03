@@ -1,16 +1,27 @@
+<!-- Ejercicio 1:
+
+Crear un documento html con 3 cuadrados que, al ser clickeados,
+cambien el color de fondo del documento.
+Cada cuadrado deberá tener un color distinto. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Ejercicio 1</title>
     <link rel="stylesheet" href="ejercicio-1.css">
-    <script src="ejercicio-1.js"></script>
 </head>
 <body>
-    <h1>HACE CLICK EN UN CUADRADO!</h1>
+    <h1>HACE CLICK EN UN CUADRADO PARA CAMBIAR EL FONDO!</h1>
     <div id="contenedor">
-        <div class="cuadrado-1"></div>
-        <div class="cuadrado-2"></div>
-        <div class="cuadrado-3"></div>
+        <div class="cuadrado-1" onclick="cambiarFondo(`#002B7F`)"></div>
+        <div class="cuadrado-2" onclick="cambiarFondo(`#FCD116`)"></div>
+        <div class="cuadrado-3" onclick="cambiarFondo(`#CE1126`)"></div>
     </div>
+
+    <script>
+        function cambiarFondo(color){
+            document.querySelector("body").style.backgroundColor = color
+        }
+    </script>
 </body>
 </html>
