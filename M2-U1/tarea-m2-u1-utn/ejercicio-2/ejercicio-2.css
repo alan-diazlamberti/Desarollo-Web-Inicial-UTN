@@ -1,18 +1,19 @@
-body{
+body {
     background-color: #FFF8D6;
 }
 
-h1, h3{
+h1,
+h3 {
     font-family: sans-serif;
     text-align: center;
 }
 
-#textarea{
+#textarea {
     display: flex;
     justify-content: center;
 }
 
-#texto{
+#texto {
     max-width: 700px;
     min-width: 700px;
     max-height: 300px;
@@ -20,16 +21,16 @@ h1, h3{
     font-family: sans-serif;
 }
 
-#button{
+#button {
     display: flex;
     justify-content: center;
 }
 
 button {
-  background-color: #DB3D3D;
-  padding: 5px 30px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
+    background-color: #DB3D3D;
+    padding: 5px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
 }

@@ -6,22 +6,22 @@ Cada cuadrado deberá tener un color distinto. -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="ejercicio-1.css">
-</head>
-<body>
+    <link rel="stylesheet" href="ejercicio-1.css" />
+  </head>
+  <body>
     <h1>HACE CLICK EN UN CUADRADO PARA CAMBIAR EL FONDO!</h1>
     <div id="contenedor">
-        <div class="cuadrado-1" onclick="cambiarFondo(`#002B7F`)"></div>
-        <div class="cuadrado-2" onclick="cambiarFondo(`#FCD116`)"></div>
-        <div class="cuadrado-3" onclick="cambiarFondo(`#CE1126`)"></div>
+      <div class="cuadrado-1" onclick="cambiarFondo(`#002B7F`)"></div>
+      <div class="cuadrado-2" onclick="cambiarFondo(`#FCD116`)"></div>
+      <div class="cuadrado-3" onclick="cambiarFondo(`#CE1126`)"></div>
     </div>
 
     <script>
-        function cambiarFondo(color){
-            document.querySelector("body").style.backgroundColor = color
-        }
+      function cambiarFondo(color) {
+        document.querySelector("body").style.backgroundColor = color;
+      }
     </script>
-</body>
+  </body>
 </html>
