@@ -6,12 +6,33 @@ Programar un contador de caracteres para un textarea. -->
 <html lang="en">
 <head>
     <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="ejercicio-2.css">
 </head>
 <body>
     <h1>CONTADOR DE CARACTERES</h1>
-    <textarea name="" id="texto" cols="63" rows="10"></textarea>
-    <h3 id="contador">Caracteres:</h3>
 
+    <div id="textarea">
+        <textarea id="texto"></textarea>
+    </div>
+
+    <h3>Caracteres: <span id="contador">0</span></h3>
+
+    <div id="button">
+        <button onclick="reset()">Reiniciar</button>
+    </div>
+
+<script>
+    let texto = document.getElementById("texto");
+    let contador = document.getElementById("contador");
     
+    texto.addEventListener("keyup", function(){
+        contador.innerText = texto.value.length;
+    })
+
+    function reset() {
+        document.getElementById("texto").value = "";
+        document.getElementById("contador").innerText = "0";
+}
+</script>
 </body>
 </html>

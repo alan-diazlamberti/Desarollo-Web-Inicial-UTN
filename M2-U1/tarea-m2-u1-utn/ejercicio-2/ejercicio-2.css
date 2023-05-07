@@ -1,0 +1,35 @@
+body{
+    background-color: #FFF8D6;
+}
+
+h1, h3{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#textarea{
+    display: flex;
+    justify-content: center;
+}
+
+#texto{
+    max-width: 700px;
+    min-width: 700px;
+    max-height: 300px;
+    min-height: 300px;
+    font-family: sans-serif;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+  background-color: #DB3D3D;
+  padding: 5px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
