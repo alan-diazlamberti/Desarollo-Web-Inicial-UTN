@@ -24,6 +24,50 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
+var pool = require("./db");
+
+// SELECT
+// pool.query("select * from empleados").then(function (resultados) {
+//   console.log(resultados);
+// });
+
+// INSERT
+// var obj = {
+//   nombre: "Juan",
+//   apellido: "Lopez",
+//   trabajo: "Docente",
+//   edad: 38,
+//   salario: 150000,
+//   mail: "juanlopez@bignet",
+// };
+
+// pool.query("insert into empleados set ?", [obj]).then(function (resultados) {
+//   console.log(resultados);
+// });
+
+// UPDATE
+// var id = 1;
+// var obj = {
+//   nombre: "Pablo",
+//   apellido: "Gomez",
+//   mail: "pablo_gomez@bignet.com",
+// };
+
+// pool
+//   .query("update empleados set ? where id_emp=?", [obj, id])
+//   .then(function (resultados) {
+//     console.log(resultados);
+//   });
+
+// DELETE
+// var id = 23;
+
+// pool
+//   .query("delete from empleados where id_emp=?", [id])
+//   .then(function (resultados) {
+//     console.log(resultados);
+//   });
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
